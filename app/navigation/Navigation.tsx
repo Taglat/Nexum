@@ -10,7 +10,7 @@ const Navigation:FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
-        headerShown: true,
+        headerShown: false,
         contentStyle: {backgroundColor: '#ffffff'}
       }}>
         {
