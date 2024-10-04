@@ -3,8 +3,8 @@ import React from 'react'
 
 const Auth = () => {
   return (
-    <View>
-      <Text>Auth</Text>
+    <View >
+      <Text className='text-gray-400 text-5xl'>Auth</Text>
     </View>
   )
 }

@@ -7,6 +7,7 @@ module.exports = function(api) {
         rootPathSuffix: 'app/',
         rootPathPreffix: '@/'
       }],
+      ["nativewind/babel"],
     ],
   };
 };
