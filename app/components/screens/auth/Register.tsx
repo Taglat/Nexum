@@ -7,14 +7,23 @@ import { IAuthFormData } from './auth.interface';
 import { validEmail } from './email.regex';
 import { useForm } from 'react-hook-form';
 import BackButton from '@/components/ui/back-button/BackButton';
+import { useAuth } from '@/context/AuthContext';
 
 const Register = () => {
-  const { goBack } = useTypedNavigation();
+  const { navigate } = useTypedNavigation();
 
   const { handleSubmit, reset, control } = useForm<IAuthFormData>({
     mode: "onChange",
   });
 
+  const { toggleAuth } = useAuth();
+
+  const auth = () => {
+    toggleAuth();
+    setTimeout(() => {
+      navigate("Home");
+    }, 100);
+  };
 
   return (
     <View className="h-full w-full bg-white pt-14 pb-10 px-4 flex-col justify-between">
@@ -62,7 +71,7 @@ const Register = () => {
         />
       </View>
     </View>
-    <Button>Next</Button>
+    <Button onPress={() => auth()}>Next</Button>
   </View>
   )
 }

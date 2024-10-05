@@ -7,11 +7,23 @@ import { IAuthFormData } from "./auth.interface";
 import Field from "@/components/ui/field/Field";
 import { validEmail } from "./email.regex";
 import BackButton from "@/components/ui/back-button/BackButton";
+import { useAuth } from "@/context/AuthContext";
 
 const Login = () => {
+  const { navigate } = useTypedNavigation();
+
   const { handleSubmit, reset, control } = useForm<IAuthFormData>({
     mode: "onChange",
   });
+
+  const { toggleAuth } = useAuth();
+
+  const auth = () => {
+    toggleAuth();
+    setTimeout(() => {
+      navigate("Home");
+    }, 100);
+  };
 
   return (
     <View className="h-full w-full bg-white pt-14 pb-10 px-4 flex-col justify-between">
@@ -50,7 +62,7 @@ const Login = () => {
           />
         </View>
       </View>
-      <Button>Next</Button>
+      <Button onPress={() => auth()}>Next</Button>
     </View>
   );
 };
