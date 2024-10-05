@@ -7,6 +7,9 @@ import Materials from "@/components/screens/materials/Materials";
 import Profile from "@/components/screens/profile/Profile";
 
 import { IRoute } from "./navigation.types";
+import Pomodoro from "@/components/screens/techniques/pomodoro/Pomodoro";
+import EisenhowerMatrix from "@/components/screens/techniques/eisenhower-matrix/EisenhowerMatrix";
+import Blurting from "@/components/screens/techniques/blurting/Blurting";
 
 export const publicRoutes: IRoute[] = [
   {
@@ -40,4 +43,16 @@ export const routes: IRoute[] = [
     name: 'Profile',
     component: Profile,
   },
-] 
+  {
+    name: 'Pomodoro',
+    component: Pomodoro,
+  },
+  {
+    name: 'EisenhowerMatrix',
+    component: EisenhowerMatrix,
+  },
+  {
+    name: 'Blurting',
+    component: Blurting,
+  },
+];

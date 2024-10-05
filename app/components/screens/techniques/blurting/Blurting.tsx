@@ -2,12 +2,12 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import Layout from '@/components/layout/Layout'
 
-const Materials = () => {
+const Blurting = () => {
   return (
     <Layout>
-      <Text>Materials</Text>
+      <Text>Blurting</Text>
     </Layout>
   )
 }
 
-export default Materials
+export default Blurting

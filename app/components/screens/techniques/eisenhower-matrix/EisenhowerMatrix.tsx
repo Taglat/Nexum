@@ -2,12 +2,12 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import Layout from '@/components/layout/Layout'
 
-const Materials = () => {
+const EisenhowerMatrix = () => {
   return (
     <Layout>
-      <Text>Materials</Text>
+      <Text>EisenhowerMatrix</Text>
     </Layout>
   )
 }
 
-export default Materials
+export default EisenhowerMatrix

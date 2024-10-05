@@ -9,6 +9,10 @@ export type TypeRootStackParamList = {
   Techniques: undefined;
   Materials: undefined;
   Profile: undefined;
+
+  Pomodoro: undefined;
+  EisenhowerMatrix: undefined;
+  Blurting: undefined;
 };
 
 export interface IRoute {
