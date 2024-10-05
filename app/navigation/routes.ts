@@ -8,7 +8,7 @@ import Profile from "@/components/screens/profile/Profile";
 
 import { IRoute } from "./navigation.types";
 
-export const routes: IRoute[] = [
+export const publicRoutes: IRoute[] = [
   {
     name: 'Auth',
     component: Auth,
@@ -21,6 +21,9 @@ export const routes: IRoute[] = [
     name: 'Register',
     component: Register,
   },
+]
+
+export const routes: IRoute[] = [
   {
     name: 'Home',
     component: Home,
@@ -37,4 +40,4 @@ export const routes: IRoute[] = [
     name: 'Profile',
     component: Profile,
   },
-]
+] 
