@@ -5,7 +5,7 @@ import Layout from '@/components/layout/Layout'
 const EisenhowerMatrix = () => {
   return (
     <Layout>
-      <Text>EisenhowerMatrix</Text>
+      <Text className='text-3xl'>EisenhowerMatrix</Text>
     </Layout>
   )
 }

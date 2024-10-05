@@ -5,7 +5,7 @@ import Layout from '@/components/layout/Layout'
 const Materials = () => {
   return (
     <Layout>
-      <Text>Materials</Text>
+      <Text className='text-3xl'>Materials</Text>
     </Layout>
   )
 }

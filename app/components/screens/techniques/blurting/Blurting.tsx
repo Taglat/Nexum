@@ -5,7 +5,7 @@ import Layout from '@/components/layout/Layout'
 const Blurting = () => {
   return (
     <Layout>
-      <Text>Blurting</Text>
+      <Text className='text-3xl'>Blurting</Text>
     </Layout>
   )
 }

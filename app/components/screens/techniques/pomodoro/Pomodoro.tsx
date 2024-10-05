@@ -5,7 +5,7 @@ import Layout from '@/components/layout/Layout'
 const Pomodoro = () => {
   return (
     <Layout>
-      <Text>Pomodoro</Text>
+      <Text className='text-3xl'>Pomodoro</Text>
     </Layout>
   )
 }
