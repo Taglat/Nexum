@@ -14,7 +14,7 @@ export const menuItems: IMenuItem[] = [
 		path: 'Materials'
 	},
 	{
-		iconName: 'shopping-bag',
+		iconName: 'user',
 		path: 'Profile'
 	},
 ]
