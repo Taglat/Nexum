@@ -18,10 +18,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.talgat12345.Nexum"
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ab4a88fd-d904-4564-903b-7e327969cc87"
+      }
     }
   }
 }
